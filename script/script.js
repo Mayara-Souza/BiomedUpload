@@ -3,6 +3,12 @@ let text_url = "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8
 let container = document.querySelector('#boundaries');
 
 function createCards(){
+    fetch('insert/route')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
+
     cards.forEach(card => {
         let div = document.createElement('div');
         div.className = 'card';
