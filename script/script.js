@@ -1,31 +1,50 @@
-let cards = ["Bioquímica", "Fisiopatologia", "Fisologia aplicada a psicobiologia"];
-let text_url = "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8crx2XJyr20";
+let cards;
 let container = document.querySelector('#boundaries');
 
-function createCards(){
-    fetch('./data/materias.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        });
-
-    cards.forEach(card => {
-        let div = document.createElement('div');
-        div.className = 'card';
-
-        let a = document.createElement('a');
-        a.setAttribute('href', text_url);
-        
-        let span = document.createElement('span'); 
-        span.textContent = card;
-        
-        a.appendChild(span);
-        div.appendChild(a);
-        container.appendChild(div);
+function jsonReader(){
+    fetch('../data/materias.json')
+    .then(response => response.json())
+    .then(data => {
+        cards = data;
+        console.log("JSON lido"); 
+        console.log(cards);
+        createCards(cards);
+    })
+    .catch(error => {
+        console.error('Erro ao ler o arquivo JSON:', error);
     });
 }
 
-createCards();
+function createCards(cards){
+    console.log("criando cards: ");
+
+    for(let card of cards.materias){
+        try{
+            console.log(card);
+            let div = document.createElement('div');
+            div.className = 'card';
+
+            let a = document.createElement('a');
+            a.setAttribute('href',card.direct_to);
+                
+            let span = document.createElement('span'); 
+            span.textContent = card.title;
+                
+            a.appendChild(span);
+            div.appendChild(a);
+            container.appendChild(div);
+
+            
+        }catch (erro) {
+            console.log('Não foi possível gerar o card.');
+            console.error(erro);
+        }
+    }
+}
+
+// todo-create same logic to posts
+
+jsonReader();
 
 
 
