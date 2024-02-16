@@ -42,7 +42,7 @@ function createCards(cards){
     }
 }
 
-// todo-create same logic to posts
+// todo-create same logic to posts creation
 
 jsonReader();
 
