@@ -2,15 +2,15 @@
     "materias": [
         {
             "title": "Bioquimica",
-            "direct_to": "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8crx2XJyr20"
+            "direct_to": "/pages/posts.html"
         },
         {
             "title": "Psicobiologia",
-            "direct_to": "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8crx2XJyr20"
+            "direct_to": "/pages/posts.html"
         },
         {
             "title": "Fisiopatologia",
-            "direct_to": "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8crx2XJyr20"
+            "direct_to": "/pages/posts.html"
         }
     ]    
 }
