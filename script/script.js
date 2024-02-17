@@ -72,6 +72,7 @@ function createCards(current_page, cards){
     if (current_page === "posts.html"){
         let cookie = getAllCookies();
         let theme = Object.keys(cookie)[0];
+        showPath(theme);
 
         posts[theme].forEach(post => {
             try{
@@ -110,6 +111,17 @@ function getAllCookies() {
     return cookieList;
 }
 
+function showPath(path){
+    let current_path = document.querySelector('#path');
+    console.log(current_path);
+    let content = current_path.textContent;
+    console.log(content);
+    let new_path =  content+" > "+path;
+    console.log(new_path);
 
-// todo: configurar o cookie após lançar a página
+    current_path.innerText = new_path;
+}
+
+
+// todo: configurar o cookie e atributo sameSite após lançar a página
 jsonReader();
