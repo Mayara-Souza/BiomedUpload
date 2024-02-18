@@ -5,10 +5,31 @@
     font-family: "Ubuntu", sans-serif;
 }
 
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
 :root{
     --cyan: rgb(128, 255, 234);
     --green: rgb(138, 255, 128);
     --yellow: rgb(255, 255, 128);
+
+    --duration: 2500ms;
+	--angle: 90deg;
 }
 
 body{
@@ -90,7 +111,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card a {
@@ -145,4 +166,25 @@ body{
         align-content: baseline;
         justify-content: center;
     }
+
+    .card:hover{  
+        cursor: pointer;
+
+        border: 0.35rem solid;
+        border-image: conic-gradient(from var(--angle), var(--cyan), var(--green), var(--yellow) 0.1turn,  
+            var(--cyan) 0.15turn, var(--green) 0.25turn, 
+            var(--green) 0.35turn, var(--yellow) 0.45turn, 
+            var(--yellow) 0.55turn, var(--cyan) 0.65turn, 
+            var(--green) 0.75turn, var(--yellow) 0.85turn, 
+            var(--cyan) 0.95turn, var(--green) 1turn) 30;
+        animation: borderRotate var(--duration) linear infinite forwards;
+    }
+
+    @keyframes borderRotate {
+        100% {
+            --angle: 540deg;
+        }
+    }
+    
+        
 }
