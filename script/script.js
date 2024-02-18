@@ -122,6 +122,7 @@ function showPath(path){
     current_path.innerText = new_path;
 }
 
-
+// todo: criar a interface que irá gerar os json's
+// todo: criar links para todas as notas
 // todo: configurar o cookie e atributo sameSite após lançar a página
 jsonReader();
