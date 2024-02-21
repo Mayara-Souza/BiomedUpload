@@ -11,18 +11,6 @@
     inherits: true;
 }
 
-@property --gradX {
-    syntax: '<percentage>';
-    initial-value: 50%;
-    inherits: true;
-}
-
-@property --gradY {
-    syntax: '<percentage>';
-    initial-value: 0%;
-    inherits: true;
-}
-
 :root{
     --cyan: rgb(128, 255, 234);
     --green: rgb(138, 255, 128);
@@ -41,16 +29,17 @@ body{
 #header{
     position: fixed;
     width: 100vw;
-    max-height: fit-content;
+    max-height: 5rem;;
     z-index: 1;
 
     background-color: rgb(65, 69, 88);
+
 }
 
 #header img{
     max-width: 50%;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 1rem;   
 }
 
 #header nav {
@@ -59,10 +48,16 @@ body{
     margin: .5rem 0 .5rem 10vw;
 }
 
-#header nav p{
+#header nav p a{
     color: rgb(255, 255, 128);
     font-size: 1rem;
     text-transform: lowercase;
+}
+
+#header nav p a:hover{
+    cursor: pointer;
+
+    color: rgb(149, 128, 255);
 }
 
 #boundaries{
@@ -106,6 +101,7 @@ body{
     padding: 10px;
     background-color: rgb(149, 128, 255);
     border-radius: .5rem;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
@@ -136,6 +132,15 @@ body{
     max-width: 100%;
 }
 
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    color: rgb(149, 128, 255);
+    font-size: .5rem;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 825px) and (orientation: landscape) {
     #header{
@@ -147,7 +152,7 @@ body{
     }
 
     #header nav{
-        margin-left: 50%;
+        margin-top: 2rem;
     }
 
     #header nav p{
