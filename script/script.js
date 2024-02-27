@@ -10,7 +10,7 @@ function jsonReader(){
     console.log(current_page);
 
     if (current_page === "index.html"){
-        fetch('../data/materias.json')
+        fetch('../data/subjects.json')
         .then(response => response.json())
         .then(data => {
             cards = data;
@@ -71,7 +71,8 @@ function createCards(current_page, cards){
 
     if (current_page === "posts.html"){
         let cookie = getAllCookies();
-        let theme = Object.keys(cookie)[0];
+        let theme = Object.keys(cookie)[0].toUpperCase();
+        console.log(theme);
         showPath(theme);
 
         posts[theme].forEach(post => {
@@ -121,6 +122,9 @@ function showPath(path){
 
     current_path.innerText = new_path;
 }
+
+
+
 
 // todo: criar a interface que irá gerar os json's
 // todo: criar links para todas as notas

@@ -1,18 +1,24 @@
 {
-    "bioquimica": [
+    "QUIMICA GERAL": [
         {
-            "title": "A ÁGUA E O SISTEMA TAMPÃO",
-            "direct_to": "#"
+            "title": "INTRODU\u00c7\u00c3O - \u00c1TOMOS",
+            "direct_to": "https://share.note.sx/2gb5cwvt#IUGEQRNnqi8yEm8rZMBWCmajXvFaauqX1frd3Qu/IuI"
         },
         {
-            "title": "A ÁGUA E O SISTEMA TAMPÃO 2",
-            "direct_to": "#"
+            "title": "LIGA\u00c7\u00d5ES QU\u00cdMICAS",
+            "direct_to": "https://share.note.sx/c8j4qfsb#Gx2lvFX9Yb6fEmMZsbQd89u6Y63+0Ac4JArxZJ4JjFI"
         }
     ],
-    "fisiopatologia": [
+    "FISIOLOGIA APLICADA A PSICOBIO": [
         {
-            "title": "INTRODUÇÃO A GENÉTICA E CITOGENÉTICA",
-            "direct_to": "#"
+            "title": "ESTRUTURA DO NEUR\u00d4NIO E POTENCIAL DE A\u00c7\u00c3O",
+            "direct_to": "https://share.note.sx/0q2sawx5#WqcvqOCyZb3Dusx/QTPEahNBC97SK4Jh8crx2XJyr20"
         }
-    ]      
+    ],
+    "BIOQUIMICA": [
+        {
+            "title": "A \u00c1GUA E O SISTEMA TAMP\u00c3O",
+            "direct_to": "https://share.note.sx/dtybqofp#8sWSVn3EF2CgXRtBBB5V/4Ju5RT2j/gtYV+5fNF8QZ8"
+        }
+    ]
 }
