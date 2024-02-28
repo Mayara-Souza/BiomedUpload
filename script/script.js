@@ -6,7 +6,7 @@ let container = document.querySelector('#boundaries');
 
 function jsonReader(){
     let current_page = window.location.href;
-    // current_page = current_page.slice(-10);
+    current_page = current_page.slice(-10);
     console.log(current_page);
 
     if (current_page === "index.html"){
