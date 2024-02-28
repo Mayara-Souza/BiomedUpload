@@ -5,11 +5,11 @@ let cookieList;
 let container = document.querySelector('#boundaries');
 
 function jsonReader(){
-    let current_page = window.location.href;
-    current_page = current_page.slice(-13);
+    let current_page = window.location.pathname;
+    current_page = current_page.substring(current_page.lastIndexOf('/') + 1);
     console.log(current_page);
 
-    if (current_page === "BiomedUpload/"){
+    if (current_page === "BiomedUpload"){
         fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
         .then(response => response.json())
         .then(data => {
