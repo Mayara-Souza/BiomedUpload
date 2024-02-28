@@ -10,7 +10,7 @@ function jsonReader(){
     console.log(current_page);
 
     if (current_page === "BiomedUpload/"){
-        fetch('../data/subjects.json')
+        fetch('/data/subjects.json')
         .then(response => response.json())
         .then(data => {
             cards = data;
@@ -22,7 +22,7 @@ function jsonReader(){
             console.error('Erro ao ler o arquivo JSON:', error);
         });
     } else if (current_page === "posts.html"){
-        fetch('../data/posts.json')
+        fetch('/data/posts.json')
         .then(response => response.json())
         .then(data => {
             posts = data;
