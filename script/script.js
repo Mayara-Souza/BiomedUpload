@@ -39,7 +39,7 @@ function jsonReader(){
 function createCards(current_page, cards){
     console.log("criando cards: ");
 
-    if(current_page === "index.html"){
+    if(current_page === "BiomedUpload"){
         for(let card of cards.materias){
             try{
                 console.log(card);
