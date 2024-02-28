@@ -1,8 +1,0 @@
-defaults:
-  # Adicione esta configuração para permitir a execução de scripts de qualquer fonte
-  - scope:
-      path: ""
-      type: "script"
-    values:
-      content_security_policy:
-        script-src: "'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com"

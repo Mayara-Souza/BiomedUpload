@@ -4,12 +4,18 @@ let subject;
 let cookieList;
 let container = document.querySelector('#boundaries');
 
-function jsonReader(){
-    let current_page = window.location.pathname;
-    current_page = current_page.substring(current_page.lastIndexOf('/') + 1);
-    console.log(current_page);
+function getCurrentPage(){
+    let path = window.location.pathname;
+    let segments = path.split('/');
+    let currentPage = segments[segments.length - 1];
+    return currentPage;
+}
 
-    if (current_page === "BiomedUpload"){
+function jsonReader(){
+    let current_page = getCurrentPage();
+    console.log(current_page)
+
+    if (current_page === "index.html"){
         fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
         .then(response => response.json())
         .then(data => {
@@ -39,7 +45,7 @@ function jsonReader(){
 function createCards(current_page, cards){
     console.log("criando cards: ");
 
-    if(current_page === "BiomedUpload"){
+    if(current_page === "index.html"){
         for(let card of cards.materias){
             try{
                 console.log(card);
