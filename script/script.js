@@ -10,7 +10,7 @@ function jsonReader(){
     console.log(current_page);
 
     if (current_page === "BiomedUpload/"){
-        fetch('BiomedUpload/data/subjects.json')
+        fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
         .then(response => response.json())
         .then(data => {
             cards = data;
