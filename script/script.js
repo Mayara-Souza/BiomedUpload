@@ -6,10 +6,10 @@ let container = document.querySelector('#boundaries');
 
 function jsonReader(){
     let current_page = window.location.href;
-    current_page = current_page.slice(-10);
+    current_page = current_page.slice(-13);
     console.log(current_page);
 
-    if (current_page === "index.html"){
+    if (current_page === "BiomedUpload/"){
         fetch('../data/subjects.json')
         .then(response => response.json())
         .then(data => {
