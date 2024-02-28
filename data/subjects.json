@@ -31,6 +31,10 @@
         {
             "title": "QUIMICA GERAL",
             "direct_to": "/pages/posts.html"
+        },
+        {
+            "title": "FISIOPATOLOGIA",
+            "direct_to": "/pages/posts.html"
         }
     ]
 }
