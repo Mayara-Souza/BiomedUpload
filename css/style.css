@@ -133,12 +133,21 @@ body{
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
-    position: absolute;
+    height: 2rem;
+    position: fixed;
     bottom: 0;
-    color: rgb(149, 128, 255);
+    background-color: rgb(65, 69, 88);
+    z-index: 1;
+}
+
+footer p, footer span{
+    color: white;
     font-size: .5rem;
-    text-align: center;
+    text-align: center;  
 }
 
 
