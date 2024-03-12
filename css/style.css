@@ -61,7 +61,7 @@ body{
 
 #boundaries{
     width: 80vw;
-    height: 100vh;
+    height: calc(100vh -5rem -2rem);
     margin: 0 10vw 0;
     /* margin: 8rem 10vw 3rem; */
     position: relative;
