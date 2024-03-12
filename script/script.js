@@ -16,17 +16,25 @@ function jsonReader(){
     console.log(current_page)
 
     if (current_page === "index.html"){
-        fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
-        .then(response => response.json())
-        .then(data => {
-            cards = data;
-            console.log("JSON lido"); 
-            console.log(cards);
-            createCards(current_page, cards);
-        })
-        .catch(error => {
-            console.error('Erro ao ler o arquivo JSON:', error);
-        });
+        fetch('https://mayara-souza.github.io/BiomedUpload/data/posts.json')
+            .then(response => response.json())
+            .then(data => {
+                const cards = Object.keys(data);
+                console.log(cards);
+                createCards(current_page, cards);
+            })
+        .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+        // fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
+        // .then(response => response.json())
+        // .then(data => {
+        //     cards = data;
+        //     console.log("JSON lido"); 
+        //     console.log(cards);
+        //     createCards(current_page, cards);
+        // })
+        // .catch(error => {
+        //     console.error('Erro ao ler o arquivo JSON:', error);
+        // });
     } else if (current_page === "posts.html"){
         fetch('/data/posts.json')
         .then(response => response.json())
@@ -46,7 +54,7 @@ function createCards(current_page, cards){
     console.log("criando cards: ");
 
     if(current_page === "index.html"){
-        for(let card of cards.materias){
+        for(let card of cards){
             try{
                 console.log(card);
                 let div = document.createElement('div');
@@ -56,14 +64,14 @@ function createCards(current_page, cards){
                 a.setAttribute('href',card.direct_to);
                     
                 let span = document.createElement('span'); 
-                span.textContent = card.title;
+                span.textContent = card;
                 
                 a.appendChild(span);
                 div.appendChild(a);
                 container.appendChild(div);
                 div.onclick = function(event){
                     event.preventDefault();
-                    subject = card.title.toLowerCase();
+                    subject = card.toLowerCase();
                     document.cookie = subject;
                     
                     window.location.href = '/pages/posts.html';
