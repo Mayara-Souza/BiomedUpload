@@ -24,19 +24,8 @@ function jsonReader(){
                 createCards(current_page, cards);
             })
         .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
-        // fetch('https://mayara-souza.github.io/BiomedUpload/data/subjects.json')
-        // .then(response => response.json())
-        // .then(data => {
-        //     cards = data;
-        //     console.log("JSON lido"); 
-        //     console.log(cards);
-        //     createCards(current_page, cards);
-        // })
-        // .catch(error => {
-        //     console.error('Erro ao ler o arquivo JSON:', error);
-        // });
     } else if (current_page === "posts.html"){
-        fetch('/data/posts.json')
+        fetch('https://mayara-souza.github.io/BiomedUpload/data/posts.json')
         .then(response => response.json())
         .then(data => {
             posts = data;
