@@ -2,39 +2,39 @@
     "materias": [
         {
             "title": "ANATOMIA HUMANA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "BIOQUIMICA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "CITOLOGIA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "EMBRIOLOGIA E REPRODU\u00c7\u00c3O HUMANA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "FISIOLOGIA GERAL",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "FISIOLOGIA APLICADA A PSICOBIO",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "HISTOLOGIA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "QUIMICA GERAL",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         },
         {
             "title": "FISIOPATOLOGIA",
-            "direct_to": "./pages/posts.html"
+            "direct_to": "../pages/posts.html"
         }
     ]
 }
