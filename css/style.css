@@ -23,7 +23,6 @@
 body{
     background-color: rgb(65, 69, 88);
     position: absolute;
-    overflow: hidden;
     height: auto;
 }
 
