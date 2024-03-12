@@ -74,7 +74,7 @@ function createCards(current_page, cards){
                     subject = card.toLowerCase();
                     document.cookie = subject;
                     
-                    window.location.href = 'BiomedUpload/pages/posts.html';
+                    window.location.href = 'https://mayara-souza.github.io/BiomedUpload/pages/posts.html';
                 }
             }catch (erro) {
                 console.log('Não foi possível gerar o card.');
