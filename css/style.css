@@ -50,7 +50,8 @@ body{
 #header nav p a{
     color: rgb(255, 255, 128);
     font-size: 1rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 #header nav p a:hover{
@@ -163,11 +164,20 @@ footer p, footer span{
     }
 
     #header nav{
-        margin-top: 2rem;
+        /* margin-top: 2rem;
+        margin: 0 0 0 3rem;
+        width: 5rem; */
+
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 100%;
+        margin: 0;
     }
 
-    #header nav p{
-        font-size: 1rem;
+    #header nav p a{
+        font-size: .5rem;
+        
     }
 
     .card {
