@@ -51,7 +51,7 @@ body{
 
 #header nav p a{
     color: rgb(255, 255, 128);
-    font-size: 1rem;
+    font-size: .5rem;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -172,7 +172,7 @@ footer p, footer span{
     }
 
     #header nav p a{
-        font-size: .5rem;
+        font-size: 1rem;
         
     }
 
