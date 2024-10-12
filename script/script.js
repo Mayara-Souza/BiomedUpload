@@ -127,6 +127,13 @@ function showPath(path){
 }
 
 
+function refresh_page() {
+    window.location.href = 'index.html'; 
+}
+
+
+document.getElementById('logo').addEventListener('click', refresh_page);
+
 
 
 // todo: criar a interface que irá gerar os json's
