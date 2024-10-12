@@ -15,6 +15,7 @@ function getCurrentPage(){
 function jsonReader(){
     let current_page = getCurrentPage();
     console.log(current_page)
+    changeLogo();
 
     if (current_page === "index.html"){
         fetch('https://mayara-souza.github.io/BiomedUpload/data/posts.json')
