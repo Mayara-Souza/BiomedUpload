@@ -176,7 +176,7 @@ footer p, footer span{
     }
 
     #logo{
-        content: url('./attachments/biomed_full_logo.png');
+        background-image: url('./attachments/biomed_full_logo.png');
     }
 
     .card {
