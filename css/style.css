@@ -44,9 +44,9 @@ body{
 #header nav {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 40%;
     width: 100%;
-    margin: 0;
+    margin-block: 2rem;
 }
 
 #header nav p a{
