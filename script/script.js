@@ -3,6 +3,7 @@ let posts;
 let subject;
 let cookieList;
 let container = document.querySelector('#boundaries');
+let logo = document.querySelector('#logo');
 
 function getCurrentPage(){
     let path = window.location.pathname;
@@ -125,14 +126,6 @@ function showPath(path){
 
     current_path.innerText = new_path;
 }
-
-
-function refresh_page() {
-    window.location.href = 'index.html'; 
-}
-
-
-document.getElementById('logo').addEventListener('click', refresh_page);
 
 
 
