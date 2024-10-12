@@ -175,10 +175,6 @@ footer p, footer span{
         
     }
 
-    #logo{
-        background-image: url('./attachments/biomed_full_logo.png');
-    }
-
     .card {
         flex: 1 0 25%;
         min-width: auto;

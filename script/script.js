@@ -127,6 +127,18 @@ function showPath(path){
     current_path.innerText = new_path;
 }
 
+function changeLogo() {
+    const logo = document.getElementById('logo');
+
+    if (window.innerWidth <= 825) {
+        logo.src = './attachments/biomed_short_logo.png';
+    } else {
+        logo.src = './attachments/biomed_full_logo.png';
+    }
+}
+window.onload = changeLogo;
+window.onresize = changeLogo;
+
 
 
 // todo: criar a interface que irá gerar os json's
