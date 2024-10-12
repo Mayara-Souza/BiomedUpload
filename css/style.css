@@ -42,9 +42,11 @@ body{
 }
 
 #header nav {
-    width: fit-content;
-    height: fit-content;
-    margin: .5rem 0 .5rem 10vw;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    margin: 0;
 }
 
 #header nav p a{
@@ -164,15 +166,9 @@ footer p, footer span{
     }
 
     #header nav{
-        /* margin-top: 2rem;
+        margin-top: 2rem;
         margin: 0 0 0 3rem;
-        width: 5rem; */
-
-        position: absolute;
-        top: 0;
-        left: 10px;
-        width: 100%;
-        margin: 0;
+        width: 5rem;   
     }
 
     #header nav p a{
