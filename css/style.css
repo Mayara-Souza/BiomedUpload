@@ -167,6 +167,7 @@ footer p, footer span{
 
     #header nav{
         margin: 6rem 0 0 3rem;
+        left: 0;
         width: 5rem; 
     }
 
