@@ -132,9 +132,9 @@ function changeLogo() {
     const logo = document.getElementById('logo');
 
     if (window.innerWidth <= 825) {
-        logo.src = '/BiomedUpload/attachments/biomed_short_logo.png';
+        logo.src = '/attachments/biomed_short_logo.png';
     } else {
-        logo.src = '/BiomedUpload/attachments/biomed_full_logo.png';
+        logo.src = '/attachments/biomed_full_logo.png';
     }
 }
 window.onload = changeLogo;
